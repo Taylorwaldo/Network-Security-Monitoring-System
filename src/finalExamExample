@@ -1,0 +1,45 @@
+Final Exam Example: Object-Oriented Programming in Java
+Question 3 (25 points)
+You are tasked with designing a cybersecurity system to monitor various types of network traffic and detect potential threats. Create a complete Java program that models this system using object-oriented principles.
+Your program must include:
+
+An interface called SecurityMonitor that declares methods for:
+
+Calculating threat levels based on network traffic volume
+Logging security activities
+
+
+An abstract class called NetworkDevice that:
+
+Implements the SecurityMonitor interface
+Contains fields for device name, IP address, and baseline threat level
+Includes a constructor that initializes these fields
+Provides a method to display device information
+Contains both a basic and an overloaded version of the threat calculation method
+Declares an abstract method for responding to threats
+
+
+Three concrete subclasses that extend NetworkDevice:
+
+Router - with specialized threat calculation based on connected devices
+Server - with different threat responses for various service types
+Firewall - with threat detection capabilities based on ruleset versions
+
+
+A driver class that demonstrates:
+
+Creating instances of each device type
+Storing them in an array of the parent type
+Processing different types of network traffic through each device
+Displaying appropriate threat levels and responses
+
+
+
+Your solution will be graded on:
+
+Correct implementation of inheritance
+Proper use of interfaces
+Implementation of method overriding and overloading
+Effective use of polymorphism
+Appropriate constructor design with super() calls
+Code organization and documentation
